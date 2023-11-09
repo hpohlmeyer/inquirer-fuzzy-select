@@ -1,0 +1,41 @@
+{
+  "name": "inquirer-fuzzy-select",
+  "version": "1.0.0",
+  "description": "Inquirer fuzzy select prompt",
+  "author": "Henning Pohlmeyer",
+  "license": "MIT",
+  "keywords": [],
+  "type": "module",
+  "scripts": {
+    "build": "tsup --dts --format=esm,cjs ./src/index.ts",
+    "test": "vitest run ./test/"
+  },
+  "dependencies": {
+    "@inquirer/core": "^5.1.1",
+    "ansi-escapes": "^6.2.0",
+    "chalk": "^5.3.0",
+    "figures": "^6.0.1"
+  },
+  "devDependencies": {
+    "@inquirer/testing": "^2.1.9",
+    "@tsconfig/node18": "^18.2.2",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.6"
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      },
+      "require": {
+        "default": "./dist/index.cjs",
+        "types": "./dist/index.d.cts"
+      }
+    }
+  },
+  "volta": {
+    "node": "18.18.2"
+  }
+}

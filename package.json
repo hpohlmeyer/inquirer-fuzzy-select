@@ -6,6 +6,11 @@
   "license": "MIT",
   "keywords": [],
   "type": "module",
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.cts",
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
     "build": "tsup --dts --format=esm,cjs ./src/index.ts",
     "test": "vitest run ./test/"
